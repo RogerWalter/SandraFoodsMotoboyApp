@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dialogo_arredondado">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_botao_arredondado"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Alteração de Status do Pedido"
+        android:textColor="@color/branco"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDialogoMotoboy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="O status deste pedido será alterado para "
+        android:textAlignment="center"
+        android:textColor="@color/marrom"
+        app:layout_constraintEnd_toStartOf="@+id/tvDialogoMotoboy2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btDialogoMotoboyConfirmar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_botao_arredondado"
+        android:elevation="3dp"
+        android:text="Confirmar"
+        android:textColor="@color/branco"
+        app:backgroundTint="@color/laranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btDialogoMotoboyVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/tvDialogoMotoboy3" />
+
+    <Button
+        android:id="@+id/btDialogoMotoboyVoltar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_botao_arredondado"
+        android:elevation="3dp"
+        android:text="Voltar"
+        android:textColor="@color/branco"
+        app:backgroundTint="@color/laranja"
+        app:layout_constraintBottom_toBottomOf="@+id/btDialogoMotoboyConfirmar"
+        app:layout_constraintEnd_toStartOf="@+id/btDialogoMotoboyConfirmar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btDialogoMotoboyConfirmar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        app:srcCompat="@drawable/ic_baseline_warning_24" />
+
+    <TextView
+        android:id="@+id/tvDialogoMotoboy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saiu para Entrega"
+        android:textColor="@color/laranja"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDialogoMotoboy1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDialogoMotoboy1"
+        app:layout_constraintTop_toTopOf="@+id/tvDialogoMotoboy1" />
+
+    <TextView
+        android:id="@+id/tvDialogoMotoboy3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Verifique se a sua localização está ativada antes de sair do restaurante."
+        android:textAlignment="center"
+        android:textColor="@color/marrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDialogoMotoboy1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
